@@ -14,28 +14,36 @@ body{
     background: linear-gradient(to right, #38ef7d, #11998e);
     
 }
-
- .hero-img img{
-    width: 100%;
- }
-.hero-text{
-    width: 60%;
-    height: 50%;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.9);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+.hero-section{
+    height: 100vh;
+    background: url(./img/hero-img-mobile.jpg) no-repeat center;
+    background-size: cover;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+.hero-img img{
+    display: none;
+ }
+.hero-text{
+    color: black;
+    height: 50vh;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.5 );
+}
 .hero-text h1{
+    text-align: left;
     margin-bottom: 20px;
+    font-size: 40px;
 }
 .contacCel{
     color: #3cbf36;
@@ -43,26 +51,26 @@ body{
 .hero-text p{
     display: none;
 }
+.buttons{
+    width: 100%;
+    display: flex;
+}
 button{
     border-radius: 100px;
     padding: 10px 25px;
-    width: 100%;
+    width: 160px;
+    border: none;
 }
 button:hover{
     cursor: pointer;
 }
 .btn-action{
     background-color: #3cbf36;
-    border: none;
     color: var(--card-color);
-    margin-bottom: 10px;
+    margin: 0 10px 0 0;
 }
 .btn-action strong{
     color: white;
-}
-.btn-about{
-    background-color: var(--card-color);
-    border: solid 3px #3cbf36;
 }
 
 h2{
