@@ -1,51 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Roboto:wght@300;400;500;700&display=swap');
 
-:root{
-    --card-color: white;
-    scroll-behavior: smooth;
-}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body{
     font-family: roboto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #11998e;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #11998e;
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);
+    background: linear-gradient(to right, #38ef7d, #11998e);
     
 }
-section{
-    background-color: var(--card-color);
-    width: 1000px;
-    padding: 30px 0;
-    margin-bottom: 50px;
-    border-radius: 10px;
-}
-.hero{
-    display: flex;
-    justify-content: space-around;
-}
-.herodiv{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
+
+ .hero-img img{
+    width: 100%;
+ }
 .hero-text{
+    width: 60%;
+    height: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
 }
-
+.hero-text h1{
+    margin-bottom: 20px;
+}
+.contacCel{
+    color: #3cbf36;
+}
+.hero-text p{
+    display: none;
+}
 button{
-    margin: 0 10px 0 0;
     border-radius: 100px;
     padding: 10px 25px;
+    width: 100%;
 }
 button:hover{
     cursor: pointer;
@@ -54,22 +55,19 @@ button:hover{
     background-color: #3cbf36;
     border: none;
     color: var(--card-color);
+    margin-bottom: 10px;
+}
+.btn-action strong{
+    color: white;
 }
 .btn-about{
     background-color: var(--card-color);
     border: solid 3px #3cbf36;
 }
-.hero img{
-    width: 400px;
-    border-radius: 10px;
-}
-.about{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 60px;
-}
 
-h3 , h2{
-    margin: 10px;
+h2{
+    text-align: center;
+}
+.about-card h3 , p{
+    margin-bottom: 10px;
 }
