@@ -102,7 +102,24 @@ h5{
     flex-direction: column;
     margin-top: 10px;
 }
+.contact-head{
+    margin-bottom: 5px;
+}
 .contact-text{
     display: flex;
     align-items: center;
+}
+footer{
+    margin: 10px;
+    border-radius: 10px;
+    color: white;
+    background: black;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.3 );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-icons{
+    width: 30px;
+    margin: 5px 10px 0 10px;
 }
