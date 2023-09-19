@@ -75,6 +75,7 @@ button:hover{
 }
 h2{
     text-align: center;
+    font-size: 30px;
 }
 .card-product{
     text-align: center;
@@ -87,9 +88,21 @@ h2{
 h4{
     font-size: 24px;
 }
+h5{
+    margin-left: 10px;
+}
 .product-text{
     color: rgba(0, 0, 0, 0.6);
 }
 .icons{
     width: 48px;
+}
+.contact-card{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.contact-text{
+    display: flex;
+    align-items: center;
 }
