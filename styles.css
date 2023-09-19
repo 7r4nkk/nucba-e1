@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Roboto:wght@300;400;500;700&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -44,7 +43,8 @@ body{
 .buttons{
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 button{
     border-radius: 100px;
@@ -52,6 +52,7 @@ button{
     width: 160px;
     height: 60px;
     border: none;
+    margin-bottom: 20px;
 }
 button:hover{
     cursor: pointer;
@@ -127,12 +128,7 @@ footer{
         flex-direction: row;
         justify-content: space-around;
     }
-    .buttons{
-        flex-direction: column;
-        align-items: center;
-    }
     .btn{
-        margin-bottom: 20px;
         width: 250px;
     }
     footer{
