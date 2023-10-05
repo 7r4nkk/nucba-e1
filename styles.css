@@ -8,8 +8,9 @@
 }
 body{
     font-family: roboto;
-    background: url(./img/hero-img-mobile.jpg) no-repeat center;
-    background-size: cover;
+    background-color: #ffffff;
+    background: radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent) 42.5px 42.5px, linear-gradient(#d2e4d583 3.4000000000000004px, transparent 3.4000000000000004px) 0 -1.7000000000000002px, linear-gradient(90deg, #d2e4d584 3.4000000000000004px, #ffffff 3.4000000000000004px) -1.7000000000000002px 0;
+    background-size: 85px 85px, 85px 85px, 42.5px 42.5px, 42.5px 42.5px;
 }
 .hero-section{
     height: 100vh;
@@ -18,16 +19,14 @@ body{
     justify-content: center;
 }
 .hero-text{
-    color: white;
+    color: black;
     height: 80vh;
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 5px );
+    backdrop-filter: blur( 10px );
 }
 .hero-text h1{
     text-align: center;
@@ -37,22 +36,24 @@ body{
 .contacCel{
     color: #3cbf36;
 }
-.hero-text p{
-    display: none;
-}
 .buttons{
-    width: 100%;
+    z-index: 1;
+    position: fixed;
+    padding: 5px;
+    border-radius: 10px 0 0 10px;
+    top: 50%;
+    right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: black;
 }
 button{
     border-radius: 100px;
-    padding: 10px 25px;
-    width: 160px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
+    margin: 20px 0;
     border: none;
-    margin-bottom: 20px;
 }
 button:hover{
     cursor: pointer;
@@ -67,9 +68,6 @@ button:hover{
 .sections{
     margin: 10px;
     padding: 20px;
-    background: white;
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    border-radius: 10px;
 }
 h2{
     text-align: center;
@@ -123,13 +121,13 @@ footer{
 }
 
 @media (min-width: 767px){
+    h2{
+        margin-bottom: 20px;
+    }
     .cards{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-    }
-    .btn{
-        width: 250px;
     }
     footer{
         flex-direction: row;
@@ -146,15 +144,11 @@ footer{
         height: 500px;
     }
     .hero-text h1{
-        font-size: 65px;
+        font-size: 80px;
         text-align: left;
     }
-    .buttons{
-        justify-content: space-evenly;
-        flex-direction: row;
-    }
-    .btn{
-        width: 150px;
+    .about-pa{
+        padding: 0 250px;
     }
     .about-section , .services-section , .contact-section{
         margin-bottom: 50px;
